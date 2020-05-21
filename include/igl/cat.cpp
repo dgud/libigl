@@ -39,7 +39,7 @@ IGL_INLINE void igl::cat(
     return;
   }
 
-#if false
+#if 0
   // This **must** be DynamicSparseMatrix, otherwise this implementation is
   // insanely slow
   DynamicSparseMatrix<Scalar, RowMajor> dyn_C;
@@ -81,7 +81,7 @@ IGL_INLINE void igl::cat(
   }
 
   C = SparseMatrix<Scalar>(dyn_C);
-#elif false
+#elif 0
   std::vector<Triplet<Scalar> > CIJV;
   CIJV.reserve(A.nonZeros() + B.nonZeros());
   {

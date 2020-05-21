@@ -18,7 +18,7 @@ IGL_INLINE void igl::repdiag(
   using namespace Eigen;
   int m = A.rows();
   int n = A.cols();
-#if false
+#if 0
   vector<Triplet<T> > IJV;
   IJV.reserve(A.nonZeros()*d);
   // Loop outer level

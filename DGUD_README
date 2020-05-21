@@ -1,0 +1,6 @@
+Update version:
+
+Use 'git grep LIBIGL_EIGEN_VERSION' to find the needed dependency version
+
+I have not tried to use the static library because that add a dependcy on cmake,
+and I don't know how well that works with building windows stuff from wsl.
